@@ -1,9 +1,10 @@
 body {
   background-color: azure;
+  margin: 0px;
+  max-width: 987px;
 }
 
 .inner {
-  max-width: 987px;
   margin: 0, auto;
 }
 
@@ -28,34 +29,20 @@ body {
   margin-bottom: 20px;
 }
 
-.column1 {
+.column {
+  display: inline-block;
+}
+
+.column div {
   background-color: rgba(29, 205, 121, 1);
+  width: 428px;
   height: 220px;
-  width: 100%;
   margin-bottom: 20px;
 }
 
-.column2 {
-  background-color: rgba(29, 205, 121, 1);
-  height: 220px;
-  width: 100%;
-  margin-bottom: 20px;
+.desktop {
+  display: none;
 }
-
-.column3 {
-  background-color: rgba(29, 205, 121, 1);
-  height: 220px;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.column4 {
-  background-color: rgba(29, 205, 121, 1);
-  height: 220px;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
 .footer {
   background-color: rgba(192, 24, 135, 1);
   height: 162px;
@@ -85,26 +72,24 @@ body {
     margin-bottom: 20px;
   }
 
-  .column1 {
-    display: inline-block hight;
+  .column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .column div {
     width: 231px;
     height: 220px;
+    margin: 10px;
   }
 
-  .column01 {
-    display: inline-block hight;
-    width: 231px;
-    height: 220px;
+  .desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-
-  .column02 {
-    display: inline-block hight;
+  .desktop div {
+    background-color: rgba(29, 205, 121, 1);
     width: 231px;
     height: 220px;
-  }
-  .column03 {
-    display: inline-block hight;
-    width: 231px;
-    height: 220px;
+    margin: 10px;
   }
 }
