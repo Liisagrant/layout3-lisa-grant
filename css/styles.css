@@ -79,7 +79,9 @@ body {
   .column div {
     width: 231px;
     height: 220px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 
   .desktop {
@@ -90,6 +92,8 @@ body {
     background-color: rgba(29, 205, 121, 1);
     width: 231px;
     height: 220px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 }
